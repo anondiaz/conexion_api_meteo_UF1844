@@ -10,37 +10,28 @@
   <body>
     <header><h1>City Meteo</h1></header>
     <main>
-      <section>
+      <section id="form">
         <form name="meteoForm">
           <label
             >Ciudad: <input type="text" name="city" id="city" />
             <label for="lang">Idioma:  <select name="lang" id="lang">
+                <option value="es">ESP</option>  
                 <option value="ca">CAT</option>
-                <option value="es">ESP</option>
                 <option value="en">ENG</option>
                 <option value="fr">FRA</option>
             </select></label>
-           
             <button type="submit">Busca</button>
           </label>
         </form>
       </section>
-      <section>
-        <div>
-          <p id="description"></p>
-          <p id="temp"></p>
-          <p id="feels_like"></p>
-          <p id="temp_min"></p>
-          <p id="temp_max"></p>
-          <p id="humidity"></p>
-          <p id="speed"></p>
-          <p id="sunrise"></p>
-          <p id="sunset"></p>
-        </div>
-        <div id="iconNow"></div>
+      
+      <section id="actual">
+<!--  -->
       </section>
 
-      <!-- https://www.imelcf.gob.pa/wp-content/plugins/location-weather/assets/images/icons/weather-icons/ -->
+      <section id="prevision">
+<!--  -->
+      </section>
     </main>
   </body>
 </html>

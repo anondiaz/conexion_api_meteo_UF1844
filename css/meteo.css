@@ -4,10 +4,22 @@
     box-sizing: border-box;
 
 }
+/* Ayuda a definir estructura y distribución de los elementos, comentar cuando ya no sea necesario */
+/* div {
+  border: 2px solid black;
+} */
 
 body {
     background-color: darkcyan;
     color: white;
+}
+
+#form {
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 label {
@@ -21,4 +33,73 @@ input, select {
 h1 {
     text-align: center;
     margin: 2rem 0;
+}
+
+#actual {
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .descripact {
+        font-size: 1.5rem;
+    }
+}
+
+.tiempoactual {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .iconact {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .tempact {
+        width: 250px;
+        font-size: 1.25rem;
+    }
+    .otact {
+        width: 250px;
+        font-size: 1.25rem;
+    }
+}
+
+
+#prevision {
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dia {
+    margin: 0.2rem;
+    width: 120px;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    .iconPre {
+        img {
+            width: 90px;
+            height: 90px;
+          }
+    }
+    .description {
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    .temperatura {
+        display: flex;
+        .temp_dia {
+            font-size: 1.5rem;
+        }
+        .temp_min_max_dia {
+            font-size: 0.8rem;
+        }
+    }
 }
