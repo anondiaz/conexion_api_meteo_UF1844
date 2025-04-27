@@ -94,7 +94,10 @@ h1 {
         font-size: 1rem;
     }
     .temperatura {
+        height: 75px;
         display: flex;
+        justify-content: space-around;
+        align-items: center;
         .temp_dia {
             font-size: 1.5rem;
         }
